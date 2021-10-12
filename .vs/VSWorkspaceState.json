@@ -1,9 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\src",
     "\\src\\Components"
   ],
   "SelectedNode": "\\src\\App.js",
+=======
+    "\\public",
+    "\\src",
+    "\\src\\Components"
+  ],
+  "SelectedNode": "\\src\\Components",
+>>>>>>> 6cadf4b2adf2e1942af80bdae5a395e1d6044f20
   "PreviewInSolutionExplorer": false
 }
