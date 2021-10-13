@@ -1,40 +1,80 @@
 import Carousel from 'react-bootstrap/Carousel'
-<Carousel fade>
-    <Carousel.Item>
-        <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
-            alt="First slide"
-        />
-        <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-        <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
-            alt="Second slide"
-        />
+function carousel() {
+    return (
+        <div>
 
-        <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-        <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-        />
+            <div class='container-fluid' >
 
-        <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-    </Carousel.Item>
-</Carousel>
+                <div className="row title" style={{ marginBottom: "20px" }} >
 
-export default Carousel;
+                    <div class="col-sm-12 btn btn-warning">
+
+                        How To Use Bootstrap Carousel In ReactJS
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className='container-fluid' >
+
+                <Carousel interval={600} keyboard={false} pauseOnHover={true}>
+
+                    <Carousel.Item style={{ 'height': "500px" }}  >
+
+                        <img style={{ 'height': "500px" }}
+
+                            className="d-block w-100"
+
+                            src='../assets/img/building2.jfif' />
+
+                        <Carousel.Caption>
+
+                            <h3>First Demo </h3>
+
+                        </Carousel.Caption>
+
+                    </Carousel.Item  >
+
+                    <Carousel.Item style={{ 'height': "500px" }}>
+
+                        <img style={{ 'height': "500px" }}
+
+                            className="d-block w-100"
+
+                            src={'assets/img/img1.jpg'} />
+
+                        <Carousel.Caption>
+
+                            <h3>Second Demo</h3>
+
+                        </Carousel.Caption>
+
+                    </Carousel.Item>
+
+                    <Carousel.Item style={{ 'height': "300px" }}>
+
+                        <img style={{ 'height': "300px" }}
+
+                            className="d-block w-100"
+
+                            src={'assets/img/img3.jpg'} />
+
+                        <Carousel.Caption>
+
+                            <h3>Third Demo</h3>
+
+                        </Carousel.Caption>
+
+                    </Carousel.Item>
+
+                </Carousel>
+
+            </div>
+
+        </div>
+    )
+}
+
+export default carousel;
