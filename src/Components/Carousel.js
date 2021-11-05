@@ -4,8 +4,10 @@ function carousel() {
         <Carousel fade>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src='../assets/img/building2.jfif'
+                    className="d-block"
+                    width="100%"
+                    height="550px"
+                    src='../assets/img/1.jpg'
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -15,7 +17,9 @@ function carousel() {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block"
+                    width="100%"
+                    height="550px"
                     src='../assets/img/building1.jpg'
                     alt="Second slide"
                 />
@@ -27,7 +31,9 @@ function carousel() {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
+                    className="d-block"
+                    width="100%"
+                    height="550px"
                     src='../assets/img/bulding3.jpg'
                     alt="Third slide"
                 />

@@ -1,14 +1,17 @@
-import './App.css';
-import NavBar from './Components/NavBar';
-import Carousel from './Components/Carousel';
+import React from "react";
 
-function App() {
+import NavBar from "./Components/NavBar.js";
+import  Carousel from "./Components/Carousel.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+export default function App() {
   return (
-      <div className="App">
-          <NavBar />
-          <Carousel/>
+    <>
+    <NavBar/>
+    <div className="p-5">
+    <Carousel/>
     </div>
+    </>
   );
 }
-
-export default App;

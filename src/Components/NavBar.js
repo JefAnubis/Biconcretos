@@ -1,41 +1,38 @@
-import '../App.css';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import { ReactComponent as Logo } from "../logo.svg";
 function NavBar() {
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="white" variant="white" fixed="top" >
-            <Container>
-                <Navbar.Brand href="#home">
-                    <Container>
-                    <img
-                        src='../assets/img/logo/favicon-96x96.png'
-                        width="100px"
-                        height="100px"
-                    />
-                        Biconcretos
-                    </Container>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#features">Proyectos</Nav.Link>
-                        <Nav.Link href="#pricing">Nosotros</Nav.Link>
-                        <NavDropdown title="Servicios" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                    <Nav>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    )
+
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="row d-flex flex-row justify-content-center alig-items-center p-0">
+
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav style={{ background: "#FFD51F"}} className="p-3 col-md-3" >
+          <Nav.Link href="#deets" style={{ color:"#000000", fontWeight: "bold"}}>Proyectos</Nav.Link>
+        </Nav>
+        <Nav style={{ background: "#009B93" }} className="p-3 col-md-3">
+          <Nav.Link href="#deets" style={{ color:"#000000", fontWeight: "bold"}}>Sevicios</Nav.Link>
+        </Nav>
+        <div class="d-none d-sm-none d-md-block">  <img
+          width="80px"
+          height="72px"
+          src='../assets/img/logo/logo.png'
+          alt="First slide"
+        />
+        </div>
+        <Nav style={{ background: "#FFD51F" }} className="p-3 col-md-3">
+          <Nav.Link href="#deets" style={{ color:"#000000", fontWeight: "bold"}}>Nosotros</Nav.Link>
+        </Nav>
+        <Nav style={{ background: "#009B93" }} className="p-3 col-md-2">
+          <Nav.Link href="#deets" style={{ color:"#000000",fontWeight: "bold"}}>Nosotros</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+
+    </Navbar>
+  )
 }
 
 export default NavBar;
